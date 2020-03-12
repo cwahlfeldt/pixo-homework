@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1040px;
+}
+
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 25px;
+  background-color: #f8f8f8;
+}
+
+.left-logo {
+  width: auto;
+  height: auto;
+  line-height: 0;
+}
+
+.right-logos {
+  display: flex;
+  width: auto;
+  height: auto;
+}
+
+.carle-logo {
+  padding-right: 20px;
+}
+
+.main-nav {
+  background-color: #ffffff;
+}

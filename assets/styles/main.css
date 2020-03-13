@@ -1,5 +1,29 @@
+@import 'normalize.css';
+
+/*
+ * Common
+ * */
+html {
+  line-height: 1;
+}
+
 body {
   margin: 0;
+  font-family: 'proxima-nova', sans-serif;
+}
+
+button {
+  border: none;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+}
+
+a {
+  transition: opacity 200ms ease-in-out;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 1;
 }
 
 .container {
@@ -8,6 +32,26 @@ body {
   width: 1040px;
 }
 
+.text-red {
+  color: #cf3c1b;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.primary-button {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #263b54;
+  border: solid #cf3c1b 4px;
+  padding: 7px 20px;
+}
+
+/*
+ * Nav
+ * */ 
 .top-nav,
 .bottom-nav {
   display: flex;
@@ -16,13 +60,20 @@ body {
 }
 
 .top-nav {
-  background-color: #f8f8f8;
   padding: 10px 25px;
+  background-color: #f8f8f8;
+}
+ 
+@media (max-width: 480px) {
+  .top-nav {
+    display: none;
+  }
 }
 
 .bottom-nav {
+  padding: 15px 25px;
   background-color: #ffffff;
-  padding: 20px 25px;
+  border-bottom: solid 4px #263b54;
 }
 
 .left-logo {
@@ -40,3 +91,91 @@ body {
 .carle-logo {
   padding-right: 20px;
 }
+
+.brand {
+  margin: 0;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 1.17;
+  color: #cf3c1b;
+}
+
+.links {
+  display: inline-block;
+}
+
+@media (max-width: 860px) {
+  .links {
+    display: none;
+  }
+}
+
+.nav-link,
+.mobile-menu-button {
+  margin: 0 15px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #263b54;
+}
+
+.nav-link:nth-child(4) {
+  font-weight: 300;
+  margin-right: 25px;
+}
+
+.mobile-links,
+.mobile-brand {
+  display: none;
+}
+
+.mobile-menu-button img {
+  margin-left: 4px;
+}
+
+@media (max-width: 860px) {
+  .mobile-links {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 480px) {
+  .mobile-brand {
+    display: inline-block;
+  }
+
+  .mobile-menu-button {
+    font-size: 16px;
+    line-height: 1.1;
+    margin: 0;
+  }
+
+  .menu {
+    align-self: end;
+  }
+
+  .give-now,
+  .brand {
+    display: none;
+  }
+}
+
+/*
+ * Intro
+ * */
+.intro-wrap {
+  background-color: #cf3c1b;
+  background-image: linear-gradient(to right, #c32032 0%, #e84a27 100%);
+}
+
+.intro-wrap img {
+  
+}
+
+.intro-text {
+  padding: 0 40px;
+}
+
+/*
+ * Content
+ * */

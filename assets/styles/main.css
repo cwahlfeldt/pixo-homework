@@ -27,9 +27,11 @@ a {
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1040px;
+  margin: 0 auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 100%;
+  max-width: 1055px;
 }
 
 .text-red {
@@ -166,14 +168,28 @@ a {
 .intro-wrap {
   background-color: #cf3c1b;
   background-image: linear-gradient(to right, #c32032 0%, #e84a27 100%);
+  line-height: 0;
 }
 
 .intro-wrap img {
-  
+  width: 100vw;
+  min-height: 183px;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  mix-blend-mode: multiply;
 }
 
 .intro-text {
-  padding: 0 40px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.intro-text p {
+  margin: 0;
+  font-size: 80px;
+  line-height: 1.1;
+  color: #ffffff;
 }
 
 /*

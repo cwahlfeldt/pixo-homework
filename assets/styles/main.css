@@ -9,7 +9,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'proxima-nova', sans-serif;
+  font-family: proxima-nova, sans-serif;
 }
 
 button {
@@ -26,12 +26,20 @@ a {
   opacity: 1;
 }
 
+figure {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1055px;
   margin: 0 auto;
   padding-left: 25px;
   padding-right: 25px;
-  width: 100%;
-  max-width: 1055px;
 }
 
 .text-red {
@@ -192,6 +200,156 @@ a {
   color: #ffffff;
 }
 
+@media (max-width: 860px) {
+  .intro-text p {
+    font-size: 64px;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro-text p {
+    font-size: 48px;
+  }
+}
+
 /*
  * Content
  * */
+.info-wrap {
+  padding-top: 120px;
+  padding-bottom: 140px;
+  background-color: #f8f8f8;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: flex-row;
+}
+
+@media (max-width: 610px) {
+  .info-container {
+    flex-direction: flex-column;
+  }
+}
+
+.info-left,
+.info-right {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.info-right {
+  padding-top: 122px;
+  margin-left: 40px;
+}
+
+@media (max-width: 610px) {
+  .info-left,
+  .info-right {
+    width: 100%;
+  }
+}
+
+.info-left h3 {
+  color: #263b54;
+  font-size: 48px;
+  line-height: 1.17;
+  font-weight: 300;
+}
+
+.info-left strong {
+  color: #cf3c1b;
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1.13;
+}
+
+.info-left p {
+  font-size: 20px;
+  line-height: 1.4;
+  color: #444d55;
+  font-weight: 300;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.info-left hr {
+  width: 117%;
+  position: relative;
+  border-color: #cf3c1b;
+}
+
+.quote blockquote {
+  position: relative;
+  margin: 10px 15px 0 15px;
+}
+
+.quote blockquote p {
+  font-family: ff-meta-serif-web-pro, serif;
+  font-size: 32px;
+  margin: 25px 0;
+  font-weight: 500;
+  line-height: 1.25;
+  color: #263b54;
+}
+
+.quote blockquote h4,
+.quote blockquote h5 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #444d55;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.quote blockquote h5 {
+  font-weight: 300;
+}
+
+.quote blockquote footer {
+  font-family: proxima-nova, sans-serif;
+}
+
+.quote-img {
+  width: 100%;
+  height: auto;
+}
+
+.icon-quote {
+  position: absolute;
+  height: 24px;
+  width: 20px;
+  top: -38px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/*
+ * Footer
+ * */
+.footer-wrap {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #263b54;
+  background-image: linear-gradient(to right, #1a263d 0%, #263b54 100%);
+}
+
+.footer-wrap address {
+  font-style: normal;
+  text-decoration: underline;
+  padding-bottom: 30px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  color: white;
+}
+
+.footer-wrap .phone-number {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  text-decoration: underline;
+  color: white;
+}

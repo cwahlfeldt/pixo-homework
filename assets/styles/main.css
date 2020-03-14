@@ -193,6 +193,13 @@ figure {
   padding-bottom: 120px;
 }
 
+@media (max-width: 480px) {
+  .intro-text {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
 .intro-text p {
   margin: 0;
   font-size: 80px;
@@ -219,16 +226,24 @@ figure {
   padding-top: 120px;
   padding-bottom: 140px;
   background-color: #f8f8f8;
+  overflow-x: hidden;
+}
+
+@media (max-width: 480px) {
+  .info-wrap {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
 }
 
 .info-container {
   display: flex;
-  flex-direction: flex-row;
+  flex-direction: row;
 }
 
 @media (max-width: 610px) {
   .info-container {
-    flex-direction: flex-column;
+    flex-direction: column;
   }
 }
 
@@ -240,7 +255,14 @@ figure {
 
 .info-right {
   padding-top: 122px;
-  margin-left: 40px;
+  padding-left: 40px;
+}
+
+@media (max-width: 860px) {
+  .info-right {
+    padding-top: 90px;
+    padding-left: 25px;
+  }
 }
 
 @media (max-width: 610px) {
@@ -262,6 +284,16 @@ figure {
   font-size: 64px;
   font-weight: 800;
   line-height: 1.13;
+}
+
+@media (max-width: 860px) {
+  .info-left h3 {
+    font-size: 32px;
+  }
+
+  .info-left strong {
+    font-size: 48px;
+  }
 }
 
 .info-left p {
@@ -291,6 +323,12 @@ figure {
   font-weight: 500;
   line-height: 1.25;
   color: #263b54;
+}
+
+@media (max-width: 860px) {
+  .quote blockquote p {
+    font-size: 24px;
+  }
 }
 
 .quote blockquote h4,

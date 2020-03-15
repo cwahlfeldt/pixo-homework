@@ -155,6 +155,29 @@ input:focus{
   margin-right: 25px;
 }
 
+.mobile-nav {
+  display: none;
+  position: absolute;
+  top: 69px;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+  background-color: white;
+}
+
+.mobile-nav.shown {
+  display: block;
+}
+
+.mobile-nav .nav-link {
+  display: block;
+  padding: 3px 0;
+}
+
+.mobile-nav .give-now {
+  margin-top: 10px;
+}
+
 .mobile-links,
 .mobile-brand {
   display: none;
@@ -447,6 +470,13 @@ input:focus{
   background-image: -webkit-gradient(linear, left top, right top, from(#1a263d), to(#263b54));
   background-image: -o-linear-gradient(left, #1a263d 0%, #263b54 100%);
   background-image: linear-gradient(to right, #1a263d 0%, #263b54 100%);
+}
+
+@media (max-width: 480px) {
+  .footer-wrap {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .footer-wrap address {
